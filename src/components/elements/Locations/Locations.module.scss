@@ -54,17 +54,12 @@
 
       overflow: hidden;
 
-      &:first-child {
-        img {
-          top: 20%;
-        }
-      }
-
       img {
         position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1.2);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transform: scale(1.3);
       }
 
       .location-wrapper {

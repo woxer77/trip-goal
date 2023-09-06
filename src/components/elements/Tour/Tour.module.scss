@@ -15,12 +15,16 @@
     overflow: hidden;
 
     .bg-image {
+      width: 1736px;
+      height: 1157px;
       position: absolute;
       left: -600px;
       top: -300px;
     }
 
     .map {
+      width: 1029px;
+      height: 690px;
       position: absolute;
       top: 0;
       right: -50px;
@@ -54,12 +58,16 @@
   }
 
   .lines {
+    width: 676px;
+    height: 424px;
     position: absolute;
     bottom: -210px;
     right: -285px;
   }
 
   .compass {
+    width: 158px;
+    height: 165px;
     position: absolute;
     bottom: -50px;
     right: 575px;
