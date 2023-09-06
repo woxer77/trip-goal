@@ -1,0 +1,75 @@
+@import 'assets/styles/scss/config-styles/vars';
+
+.footer {
+  height: 174px;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      row-gap: 40px;
+      column-gap: 40px;
+
+      .section {
+        text-transform: capitalize;
+        color: $color-blue-dark;
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      column-gap: 12px;
+
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 33px;
+        border: 1px solid $color-gray;
+
+        cursor: pointer;
+
+        transition: opacity 0.2s, background-color 0.2s;
+
+        &:hover {
+          opacity: 0.7;
+          background-color: $color-bg-gray;
+        }
+
+        &:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    margin: 35px 0 30px 0;
+
+    background-color: rgba(105, 118, 135, 0.10);
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

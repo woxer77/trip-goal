@@ -1,0 +1,35 @@
+.contact {
+  height: 528px;
+
+  .content {
+    position: relative;
+
+    width: 1000px;
+    height: 378px;
+    padding: 70px 0 70px 80px;
+    margin: 50px auto 0 auto;
+
+    border-radius: 40px;
+    background: #F3F8FF;
+
+    overflow: hidden;
+
+    .text-wrapper {
+      width: 409px;
+
+      .subtitle {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        margin-bottom: 30px;
+      }
+    }
+
+    .woman {
+      position: absolute;
+      right: 50px;
+      top: 20px;
+    }
+  }
+}

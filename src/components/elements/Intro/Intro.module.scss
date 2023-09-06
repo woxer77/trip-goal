@@ -1,0 +1,87 @@
+@import 'assets/styles/scss/config-styles/vars';
+
+.intro {
+  background: $color-bg-gray;
+  backdrop-filter: blur(30px);
+
+  min-height: 900px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .images {
+      display: flex;
+
+      margin-top: 50px;
+
+      .big-img {
+        width: 400px;
+        height: 540px;
+
+        img {
+          transform: translate(-45%, -40%) scale(1.7);
+        }
+      }
+
+      .small-img {
+        width: 320px;
+        height: 430px;
+        margin-top: 150px;
+        margin-left: -200px;
+
+        img {
+          transform: translate(-50%, -70%) scale(1.7);
+        }
+      }
+
+      .big-img,
+      .small-img {
+        position: relative;
+        box-sizing: content-box;
+
+        border: 10px solid #FFF;
+        overflow: hidden;
+        border-radius: 570px;
+
+        img {
+          position: relative;
+
+          width: 100%;
+          height: 100%;
+          left: 50%;
+          top: 50%;
+        }
+      }
+    }
+
+    .text {
+      width: 550px;
+      margin-top: 135px;
+
+      .subtitle {
+        margin-bottom: 15px;
+      }
+
+      .title {
+        font-size: 60px;
+        font-weight: 550;
+        line-height: 72px;
+
+        margin-bottom: 20px;
+
+        svg {
+          margin-left: 20px;
+        }
+      }
+
+      .desc {
+        margin-bottom: 50px;
+      }
+
+      .btn {
+        padding: 20px 47px;
+      }
+    }
+  }
+}

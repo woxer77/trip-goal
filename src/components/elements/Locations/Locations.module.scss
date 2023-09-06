@@ -1,0 +1,148 @@
+@import "assets/styles/scss/config-styles/vars";
+
+.locations {
+  height: 968px;
+  background: $color-bg-gray;
+
+  .text {
+    position: relative;
+
+    width: 100%;
+    padding-top: 120px;
+
+    .text-wrapper {
+      max-width: 550px;
+
+      .subtitle {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        margin-bottom: 60px;
+      }
+    }
+
+    .buttons {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+
+  .locations-wrapper {
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .location {
+      position: relative;
+
+      width: 370px;
+      height: 100%;
+
+      border-radius: 10px;
+      border: 6px solid #FFF;
+
+      overflow: hidden;
+
+      &:first-child {
+        img {
+          top: 20%;
+        }
+      }
+
+      img {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      .location-wrapper {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        align-items: flex-end;
+
+        .info {
+          width: 100%;
+          min-height: 100px;
+          padding: 20px;
+
+          border-radius: 10px;
+          border: 1px solid #989898;
+          background: rgba(0, 34, 72, 0.30);
+          backdrop-filter: blur(10px);
+          color: #FFF;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: column;
+
+          row-gap: 10px;
+
+          .row {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            column-gap: 5px;
+
+            .title {
+              font-family: Voska, 'system-ui';
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 26px;
+
+              word-break: break-word;
+            }
+
+            .country {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+
+              word-break: break-word;
+            }
+
+            .price {
+              text-align: right;
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 24px;
+            }
+
+            .stars {
+              display: flex;
+              column-gap: 2px;
+
+              .star {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

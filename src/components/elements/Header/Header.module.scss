@@ -1,0 +1,33 @@
+@import 'assets/styles/scss/config-styles/vars';
+
+.header {
+  padding: 25px 0;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      row-gap: 40px;
+      column-gap: 40px;
+
+      .section {
+        text-transform: capitalize;
+        color: $color-blue-dark;
+        font-size: 16px;
+        cursor: pointer;
+
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

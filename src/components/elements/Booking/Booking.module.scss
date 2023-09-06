@@ -1,0 +1,90 @@
+@import "assets/styles/scss/config-styles/vars";
+
+.booking {
+  position: relative;
+  display: flex;
+
+  width: 980px;
+  height: 144px;
+  margin: -72px auto 0 auto;
+  border-radius: 30px;
+
+  background-color: #FFF;
+  filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
+  overflow: hidden;
+
+  z-index: 10;
+
+  .choice {
+    width: 770px;
+
+    .wrapper {
+      padding: 45px 45px 45px 72px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .section {
+        cursor: pointer;
+
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+
+          color: $color-blue-dark;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20px;
+          text-transform: capitalize;
+
+          margin-bottom: 21px;
+
+          p {
+            margin-right: 13px;
+          }
+        }
+
+        .desc {
+          color: $color-gray;
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 210px;
+
+    background-color: $color-blue;
+    border: none;
+
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    p {
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+
+      margin-top: 15px;
+    }
+  }
+}

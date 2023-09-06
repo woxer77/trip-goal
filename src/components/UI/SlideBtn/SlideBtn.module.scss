@@ -1,0 +1,30 @@
+@import "assets/styles/scss/config-styles/vars";
+
+.button {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 5px;
+  background-color: #FFF;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  background-color: #FFF;
+}
+
+.right {
+  background-color: $color-blue;
+
+  svg {
+    transform: rotate(180deg);
+
+    path {
+      fill: #FFF;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import 'config-styles/reset';
+@import 'config-styles/vars';
+@import 'config-styles/fonts';
+
+body {
+  background-color: $default-bg-color;
+  font-family: $default-font-family, 'system-ui';
+  letter-spacing: 0.75px;
+}
+
+.page {
+  overflow: hidden; // If need to use 'position: sticky' - set 'overflow: clip'
+  color: $default-text-color;
+  font-weight: $default-font-weight;
+}
+
+.container {
+  position: relative;
+
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.active {
+  color: $color-blue !important;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $color-blue-light;
+}
+
+.title {
+  color: $color-blue-dark;
+  font-family: Voska, 'system-ui';
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: capitalize;
+}
+
+.desc {
+  color: $color-gray;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+button {
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
